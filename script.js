@@ -27,3 +27,5 @@ if (selection.name[computerSelection] === playerSelection) {
 }
 
 console.log(selection.emoji[computerSelection]);
+
+///// add code to red, green and orange the score number depending on winner at that point

@@ -37,6 +37,10 @@ body {
 	box-shadow: -10px -10px 30px grey;
 }
 
+.btn-reset:hover {
+	transform: scale(1.2);
+}
+
 .play-area {
 	background-image: url(./court.jpg);
 	background-size: contain;

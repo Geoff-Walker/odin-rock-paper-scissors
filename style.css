@@ -1,0 +1,230 @@
+html {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-family: Rampart One;
+}
+
+body {
+	background-color: rgb(61, 56, 56);
+}
+
+.heading {
+	color: white;
+	height: 180px;
+	text-align: center;
+	position: relative;
+}
+
+.page-heading {
+	font-size: 50px;
+}
+
+.page-description {
+	font-size: 40px;
+}
+
+.btn-reset {
+	width: 150px;
+	height: 80px;
+	border-radius: 25px;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	font-family: Rampart One;
+	background-color: greenyellow;
+	font-size: 20px;
+	box-shadow: -10px -10px 30px grey;
+}
+
+.play-area {
+	background-image: url(./court.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 75vh;
+	width: 75vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+
+	justify-items: center;
+}
+
+.background-selection {
+	width: 120px;
+	height: 120px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid black;
+	align-content: center;
+	font-size: 60px;
+}
+
+.background-selection:hover {
+	transform: scale(1.4);
+}
+
+.rock {
+	grid-row: 2 / 3;
+	grid-column: 3 / 4;
+}
+
+.paper {
+	grid-row: 4 / 5;
+	grid-column: 2 / 3;
+}
+.scissors {
+	grid-row: 4 / 5;
+	grid-column: 4 / 5;
+}
+
+.score-text {
+	grid-row: 1/2;
+	grid-column: 4/7;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 10px;
+	height: 55px;
+	width: 350px;
+}
+
+.score-text-player {
+	grid-row: 1/2;
+	grid-column: 1/2;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 10px;
+	height: 55px;
+	width: 150px;
+}
+
+.score-text-computer {
+	grid-row: 1/2;
+	grid-column: 8/10;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 10px;
+	height: 55px;
+	width: 200px;
+	justify-self: end;
+}
+
+.score-player {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 50%;
+	height: 55px;
+	width: 55px;
+}
+
+.score-computer {
+	grid-row: 1/2;
+	grid-column: 8/9;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 50%;
+	height: 55px;
+	width: 55px;
+	justify-self: start;
+}
+
+.background-selected {
+	grid-row: 3/4;
+	grid-column: 3/4;
+	width: 120px;
+	height: 120px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid black;
+	align-content: center;
+	font-size: 60px;
+}
+
+.background-computer {
+	grid-row: 3/4;
+	grid-column: 7/8;
+	width: 120px;
+	height: 120px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid black;
+	align-content: center;
+	font-size: 60px;
+}
+
+.choose {
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 10px;
+	height: 55px;
+	width: 400px;
+	grid-row: 5/6;
+	grid-column: 2/5;
+}
+
+.player-wins-text {
+	grid-row: 2/3;
+	grid-column: 5/6;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(172, 255, 47, 0.685);
+	border-radius: 10px;
+	height: 55px;
+	width: 150px;
+}
+.computer-wins-text {
+	grid-row: 2/3;
+	grid-column: 5/6;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(248, 0, 0, 0.664);
+	border-radius: 10px;
+	height: 55px;
+	width: 200px;
+}
+
+.no-one-wins-text {
+	grid-row: 2/3;
+	grid-column: 5/6;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(255, 166, 0, 0.603);
+	border-radius: 10px;
+	height: 55px;
+	width: 200px;
+}
+
+.wins {
+	grid-row: 3/4;
+	grid-column: 5/6;
+	font-size: 35px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 10px;
+	height: 55px;
+	width: 200px;
+	display: block;
+	transform: translateY(-60px);
+}
+
+.hidden {
+	display: none;
+}

@@ -11,34 +11,38 @@ body {
 
 .heading {
 	color: white;
-	height: 180px;
+	height: 12rem;
 	text-align: center;
 	position: relative;
 }
 
 .page-heading {
-	font-size: 50px;
+	font-size: 3rem;
 }
 
 .page-description {
-	font-size: 40px;
+	font-size: 2rem;
 }
 
 .btn-reset {
-	width: 150px;
-	height: 80px;
-	border-radius: 25px;
+	width: 12rem;
+	height: 6rem;
+	border-radius: 2rem;
 	position: absolute;
-	left: 50px;
-	top: 50px;
+	left: 3rem;
+	top: 3rem;
 	font-family: Rampart One;
 	background-color: greenyellow;
-	font-size: 20px;
+	font-size: 1.8rem;
 	box-shadow: -10px -10px 30px grey;
 }
 
 .btn-reset:hover {
 	transform: scale(1.2);
+}
+
+.btn-reset:active {
+	transform: scale(1);
 }
 
 .play-area {
@@ -56,8 +60,8 @@ body {
 }
 
 .background-selection {
-	width: 120px;
-	height: 120px;
+	width: 9rem;
+	height: 9rem;
 	background-color: white;
 	border-radius: 50%;
 	display: flex;
@@ -70,6 +74,10 @@ body {
 
 .background-selection:hover {
 	transform: scale(1.4);
+}
+
+.background-selection:active {
+	transform: scale(1);
 }
 
 .rock {

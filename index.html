@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <Link rel="stylesheet" href="style.css"></Link>
     <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
-    <script src="./script.js"></script>
+   
 
     <title>Rock, Paper, Scissors!</title>
 </head>
@@ -19,16 +19,16 @@
 
 
     <div class="play-area">
-        <btn class="rock background-selection">👊</btn>
-        <btn class="paper background-selection">✋</btn>
-        <btn class="scissors background-selection">✌️</btn>
+        <button class="selection rock background-selection btn_input" data-selection="0" id="rockBtn" value="rock">👊</button>
+        <button class="selection paper background-selection btn_input" data-selection="1" id="paperBtn" value="paper">✋</button>
+        <button class="selection scissors background-selection btn_input" data-selection="2" id="scissorsBtn" value="scissors">✌️</button>
         <p class="score-text">Score</p>
         <p class="score-text-player">Player</p>
         <p class="score-player">0</p>
         <p class="score-text-computer">Computer</p>
         <p class="score-computer">0</p>
 
-        <div class="background-selected hidden"><p class="player-selected">✌️</p></div>
+        <div class="background-selected hidden"><p class="player-selected">👊</p></div>
         <div class="background-computer hidden"><p class="computer-selected">✌️</p></div>
         <p class="choose">Choose Your Weapon!</p>
         <p class="player-wins-text hidden">Player</p>
@@ -37,5 +37,7 @@
         <p class="wins hidden">Wins!!</p>
         
     </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>

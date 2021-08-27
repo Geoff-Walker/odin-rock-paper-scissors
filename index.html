@@ -14,7 +14,7 @@
     <div class="heading">
         <h1 class="page-heading">Rock, Paper, Scissors!</h1>
         <h2 class="page-description">The classic game remade for the Odin Project course</h2>  
-        <button class="btn-reset">Play Again</button>
+        <button class="btn-reset" onclick="newGame()">Play Again</button>
     </div>
 
 
@@ -27,6 +27,7 @@
         <p class="score-player">0</p>
         <p class="score-text-computer">Computer</p>
         <p class="score-computer">0</p>
+        <button class="btn-next-round hidden" onclick="unhide()">New Set</button>
 
         <div class="background-selected hidden"><p class="player-selected">👊</p></div>
         <div class="background-computer hidden"><p class="computer-selected">✌️</p></div>

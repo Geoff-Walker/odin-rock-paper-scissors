@@ -240,3 +240,15 @@ body {
 .hidden {
 	display: none;
 }
+
+.btn-next-round {
+	width: 12rem;
+	height: 6rem;
+	border-radius: 2rem;
+	font-family: Rampart One;
+	background-color: rgba(172, 255, 47, 0.685);
+	font-size: 1.8rem;
+	box-shadow: -10px -10px 30px grey;
+	grid-row: 5/6;
+	grid-column: 2/5;
+}
